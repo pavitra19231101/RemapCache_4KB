@@ -1,0 +1,664 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : doCore
+Version: O-2018.06-SP5-3
+Date   : Wed Feb 22 11:29:29 2023
+****************************************
+
+Operating Conditions: tt28_1.00V_0.00V_0.00V_0.00V_25C   Library: C28SOI_SC_12_CORE_LL
+Wire Load Model Mode: enclosed
+
+  Startpoint: doCore_core_inst/core_multiplicationUnit_state_1_5_2_sva_regx0x
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: doCore_core_inst/doCycle_multResult_sva_17_1_regx31x
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  doCore             wl_zero               C28SOI_SC_12_CORE_LL
+  doCore_core        wl_zero               C28SOI_SC_12_CORE_LL
+  doCore_core_DW01_add_12
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  doCore_core_DW01_add_11
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  doCore_core_DW01_add_8
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  doCore_core_DW01_add_6
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  doCore_core_DW01_inc_14
+                     wl_zero               C28SOI_SC_12_CORE_LL
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  doCore_core_inst/core_multiplicationUnit_state_1_5_2_sva_regx0x/CP (C12T28SOI_LL_DFPQNX8_P0)
+                                                          0.00       0.00 r
+  doCore_core_inst/core_multiplicationUnit_state_1_5_2_sva_regx0x/QN (C12T28SOI_LL_DFPQNX8_P0)
+                                                          0.03       0.03 r
+  doCore_core_inst/U11389/Z (C12T28SOI_LL_BFX8_P0)        0.03       0.05 r
+  doCore_core_inst/U11336/Z (C12T28SOI_LL_NAND2X7_P0)     0.01       0.07 f
+  doCore_core_inst/U5020/Z (C12T28SOI_LL_IVX8_P0)         0.01       0.08 r
+  doCore_core_inst/U11335/Z (C12T28SOI_LL_NAND2X7_P0)     0.01       0.09 f
+  doCore_core_inst/U11241/Z (C12T28SOI_LL_OAI12X6_P0)     0.02       0.11 r
+  doCore_core_inst/U5014/Z (C12T28SOI_LL_IVX8_P0)         0.02       0.12 f
+  doCore_core_inst/U5011/Z (C12T28SOI_LL_NAND3X6_P0)      0.02       0.15 r
+  doCore_core_inst/U11304/Z (C12T28SOI_LL_OAI22X5_P0)     0.01       0.16 f
+  doCore_core_inst/U11307/Z (C12T28SOI_LL_NAND4ABX6_P0)
+                                                          0.03       0.19 f
+  doCore_core_inst/add_1_root_add_16165_2/A(0) (doCore_core_DW01_add_12)
+                                                          0.00       0.19 f
+  doCore_core_inst/add_1_root_add_16165_2/U63/Z (C12T28SOI_LL_OR2X8_P0)
+                                                          0.03       0.22 f
+  doCore_core_inst/add_1_root_add_16165_2/U62/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.24 f
+  doCore_core_inst/add_1_root_add_16165_2/U61/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.27 f
+  doCore_core_inst/add_1_root_add_16165_2/U60/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.28 f
+  doCore_core_inst/add_1_root_add_16165_2/U59/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.31 f
+  doCore_core_inst/add_1_root_add_16165_2/U58/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.33 f
+  doCore_core_inst/add_1_root_add_16165_2/U57/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.36 f
+  doCore_core_inst/add_1_root_add_16165_2/U56/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.37 f
+  doCore_core_inst/add_1_root_add_16165_2/U55/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.40 f
+  doCore_core_inst/add_1_root_add_16165_2/U54/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.42 f
+  doCore_core_inst/add_1_root_add_16165_2/U53/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.45 f
+  doCore_core_inst/add_1_root_add_16165_2/U52/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.46 f
+  doCore_core_inst/add_1_root_add_16165_2/U51/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.49 f
+  doCore_core_inst/add_1_root_add_16165_2/U50/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.51 f
+  doCore_core_inst/add_1_root_add_16165_2/U49/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.53 f
+  doCore_core_inst/add_1_root_add_16165_2/U48/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.55 f
+  doCore_core_inst/add_1_root_add_16165_2/U47/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.58 f
+  doCore_core_inst/add_1_root_add_16165_2/U46/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.60 f
+  doCore_core_inst/add_1_root_add_16165_2/U45/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.62 f
+  doCore_core_inst/add_1_root_add_16165_2/U44/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.64 f
+  doCore_core_inst/add_1_root_add_16165_2/U43/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.67 f
+  doCore_core_inst/add_1_root_add_16165_2/U42/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.68 f
+  doCore_core_inst/add_1_root_add_16165_2/U41/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.71 f
+  doCore_core_inst/add_1_root_add_16165_2/U40/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.73 f
+  doCore_core_inst/add_1_root_add_16165_2/U39/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.76 f
+  doCore_core_inst/add_1_root_add_16165_2/U38/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.77 f
+  doCore_core_inst/add_1_root_add_16165_2/U37/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.80 f
+  doCore_core_inst/add_1_root_add_16165_2/U36/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.82 f
+  doCore_core_inst/add_1_root_add_16165_2/U35/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.85 f
+  doCore_core_inst/add_1_root_add_16165_2/U34/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.86 f
+  doCore_core_inst/add_1_root_add_16165_2/U33/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.89 f
+  doCore_core_inst/add_1_root_add_16165_2/U32/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.91 f
+  doCore_core_inst/add_1_root_add_16165_2/U31/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.94 f
+  doCore_core_inst/add_1_root_add_16165_2/U30/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.95 f
+  doCore_core_inst/add_1_root_add_16165_2/U29/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.98 f
+  doCore_core_inst/add_1_root_add_16165_2/U28/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.00 f
+  doCore_core_inst/add_1_root_add_16165_2/U27/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.02 f
+  doCore_core_inst/add_1_root_add_16165_2/U26/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.04 f
+  doCore_core_inst/add_1_root_add_16165_2/U25/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.07 f
+  doCore_core_inst/add_1_root_add_16165_2/U24/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.09 f
+  doCore_core_inst/add_1_root_add_16165_2/U23/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.11 f
+  doCore_core_inst/add_1_root_add_16165_2/U22/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.13 f
+  doCore_core_inst/add_1_root_add_16165_2/U21/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.16 f
+  doCore_core_inst/add_1_root_add_16165_2/U20/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.17 f
+  doCore_core_inst/add_1_root_add_16165_2/U19/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.20 f
+  doCore_core_inst/add_1_root_add_16165_2/U18/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.22 f
+  doCore_core_inst/add_1_root_add_16165_2/U17/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.25 f
+  doCore_core_inst/add_1_root_add_16165_2/U16/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.26 f
+  doCore_core_inst/add_1_root_add_16165_2/U15/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.29 f
+  doCore_core_inst/add_1_root_add_16165_2/U14/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.31 f
+  doCore_core_inst/add_1_root_add_16165_2/U13/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.34 f
+  doCore_core_inst/add_1_root_add_16165_2/U12/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.35 f
+  doCore_core_inst/add_1_root_add_16165_2/U11/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.38 f
+  doCore_core_inst/add_1_root_add_16165_2/U10/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.40 f
+  doCore_core_inst/add_1_root_add_16165_2/U9/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.43 f
+  doCore_core_inst/add_1_root_add_16165_2/U8/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.44 f
+  doCore_core_inst/add_1_root_add_16165_2/U7/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.47 f
+  doCore_core_inst/add_1_root_add_16165_2/U6/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.49 f
+  doCore_core_inst/add_1_root_add_16165_2/U5/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.51 f
+  doCore_core_inst/add_1_root_add_16165_2/U4/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.53 f
+  doCore_core_inst/add_1_root_add_16165_2/U3/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.56 f
+  doCore_core_inst/add_1_root_add_16165_2/U2/Z (C12T28SOI_LL_AND2X8_P0)
+                                                          0.02       1.58 f
+  doCore_core_inst/add_1_root_add_16165_2/U1/Z (C12T28SOI_LL_OAI22X5_P0)
+                                                          0.15       1.73 r
+  doCore_core_inst/add_1_root_add_16165_2/SUM(32) (doCore_core_DW01_add_12)
+                                                          0.00       1.73 r
+  doCore_core_inst/U2564/Z (C12T28SOI_LL_IVX8_P0)         0.01       1.74 f
+  doCore_core_inst/U1254/Z (C12T28SOI_LL_BFX8_P0)         0.03       1.77 f
+  doCore_core_inst/U5033/Z (C12T28SOI_LL_AO22X8_P0)       0.04       1.81 f
+  doCore_core_inst/add_1_root_add_16159_2/A(1) (doCore_core_DW01_add_11)
+                                                          0.00       1.81 f
+  doCore_core_inst/add_1_root_add_16159_2/U62/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.83 f
+  doCore_core_inst/add_1_root_add_16159_2/U61/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.86 f
+  doCore_core_inst/add_1_root_add_16159_2/U60/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.87 f
+  doCore_core_inst/add_1_root_add_16159_2/U59/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.90 f
+  doCore_core_inst/add_1_root_add_16159_2/U58/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.92 f
+  doCore_core_inst/add_1_root_add_16159_2/U57/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.95 f
+  doCore_core_inst/add_1_root_add_16159_2/U56/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.96 f
+  doCore_core_inst/add_1_root_add_16159_2/U55/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.99 f
+  doCore_core_inst/add_1_root_add_16159_2/U54/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.01 f
+  doCore_core_inst/add_1_root_add_16159_2/U53/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.03 f
+  doCore_core_inst/add_1_root_add_16159_2/U52/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.05 f
+  doCore_core_inst/add_1_root_add_16159_2/U51/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.08 f
+  doCore_core_inst/add_1_root_add_16159_2/U50/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.10 f
+  doCore_core_inst/add_1_root_add_16159_2/U49/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.12 f
+  doCore_core_inst/add_1_root_add_16159_2/U48/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.14 f
+  doCore_core_inst/add_1_root_add_16159_2/U47/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.17 f
+  doCore_core_inst/add_1_root_add_16159_2/U46/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.18 f
+  doCore_core_inst/add_1_root_add_16159_2/U45/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.21 f
+  doCore_core_inst/add_1_root_add_16159_2/U44/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.23 f
+  doCore_core_inst/add_1_root_add_16159_2/U43/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.26 f
+  doCore_core_inst/add_1_root_add_16159_2/U42/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.27 f
+  doCore_core_inst/add_1_root_add_16159_2/U41/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.30 f
+  doCore_core_inst/add_1_root_add_16159_2/U40/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.32 f
+  doCore_core_inst/add_1_root_add_16159_2/U39/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.35 f
+  doCore_core_inst/add_1_root_add_16159_2/U38/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.36 f
+  doCore_core_inst/add_1_root_add_16159_2/U37/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.39 f
+  doCore_core_inst/add_1_root_add_16159_2/U36/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.41 f
+  doCore_core_inst/add_1_root_add_16159_2/U35/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.44 f
+  doCore_core_inst/add_1_root_add_16159_2/U34/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.45 f
+  doCore_core_inst/add_1_root_add_16159_2/U33/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.48 f
+  doCore_core_inst/add_1_root_add_16159_2/U32/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.50 f
+  doCore_core_inst/add_1_root_add_16159_2/U31/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.52 f
+  doCore_core_inst/add_1_root_add_16159_2/U30/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.54 f
+  doCore_core_inst/add_1_root_add_16159_2/U29/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.57 f
+  doCore_core_inst/add_1_root_add_16159_2/U28/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.59 f
+  doCore_core_inst/add_1_root_add_16159_2/U27/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.61 f
+  doCore_core_inst/add_1_root_add_16159_2/U26/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.63 f
+  doCore_core_inst/add_1_root_add_16159_2/U25/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.66 f
+  doCore_core_inst/add_1_root_add_16159_2/U24/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.67 f
+  doCore_core_inst/add_1_root_add_16159_2/U23/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.70 f
+  doCore_core_inst/add_1_root_add_16159_2/U22/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.72 f
+  doCore_core_inst/add_1_root_add_16159_2/U21/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.75 f
+  doCore_core_inst/add_1_root_add_16159_2/U20/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.76 f
+  doCore_core_inst/add_1_root_add_16159_2/U19/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.79 f
+  doCore_core_inst/add_1_root_add_16159_2/U18/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.81 f
+  doCore_core_inst/add_1_root_add_16159_2/U17/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.84 f
+  doCore_core_inst/add_1_root_add_16159_2/U16/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.85 f
+  doCore_core_inst/add_1_root_add_16159_2/U15/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.88 f
+  doCore_core_inst/add_1_root_add_16159_2/U14/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.90 f
+  doCore_core_inst/add_1_root_add_16159_2/U13/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.93 f
+  doCore_core_inst/add_1_root_add_16159_2/U12/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.94 f
+  doCore_core_inst/add_1_root_add_16159_2/U11/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       2.97 f
+  doCore_core_inst/add_1_root_add_16159_2/U10/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       2.99 f
+  doCore_core_inst/add_1_root_add_16159_2/U9/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.01 f
+  doCore_core_inst/add_1_root_add_16159_2/U8/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.03 f
+  doCore_core_inst/add_1_root_add_16159_2/U7/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.06 f
+  doCore_core_inst/add_1_root_add_16159_2/U6/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.08 f
+  doCore_core_inst/add_1_root_add_16159_2/U5/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.10 f
+  doCore_core_inst/add_1_root_add_16159_2/U4/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.12 f
+  doCore_core_inst/add_1_root_add_16159_2/U3/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.15 f
+  doCore_core_inst/add_1_root_add_16159_2/U2/Z (C12T28SOI_LL_AND2X8_P0)
+                                                          0.02       3.17 f
+  doCore_core_inst/add_1_root_add_16159_2/U1/Z (C12T28SOI_LL_OAI22X5_P0)
+                                                          0.14       3.31 r
+  doCore_core_inst/add_1_root_add_16159_2/SUM(32) (doCore_core_DW01_add_11)
+                                                          0.00       3.31 r
+  doCore_core_inst/U2584/Z (C12T28SOI_LL_IVX8_P0)         0.01       3.32 f
+  doCore_core_inst/U1247/Z (C12T28SOI_LL_BFX8_P0)         0.05       3.37 f
+  doCore_core_inst/U5050/Z (C12T28SOI_LL_AO22X8_P0)       0.05       3.41 f
+  doCore_core_inst/add_1_root_add_16148_2/A(1) (doCore_core_DW01_add_8)
+                                                          0.00       3.41 f
+  doCore_core_inst/add_1_root_add_16148_2/U62/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.43 f
+  doCore_core_inst/add_1_root_add_16148_2/U61/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.46 f
+  doCore_core_inst/add_1_root_add_16148_2/U60/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.48 f
+  doCore_core_inst/add_1_root_add_16148_2/U59/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.51 f
+  doCore_core_inst/add_1_root_add_16148_2/U58/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.52 f
+  doCore_core_inst/add_1_root_add_16148_2/U57/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.55 f
+  doCore_core_inst/add_1_root_add_16148_2/U56/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.57 f
+  doCore_core_inst/add_1_root_add_16148_2/U55/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.60 f
+  doCore_core_inst/add_1_root_add_16148_2/U54/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.61 f
+  doCore_core_inst/add_1_root_add_16148_2/U53/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.64 f
+  doCore_core_inst/add_1_root_add_16148_2/U52/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.66 f
+  doCore_core_inst/add_1_root_add_16148_2/U51/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.68 f
+  doCore_core_inst/add_1_root_add_16148_2/U50/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.70 f
+  doCore_core_inst/add_1_root_add_16148_2/U49/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.73 f
+  doCore_core_inst/add_1_root_add_16148_2/U48/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.75 f
+  doCore_core_inst/add_1_root_add_16148_2/U47/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.77 f
+  doCore_core_inst/add_1_root_add_16148_2/U46/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.79 f
+  doCore_core_inst/add_1_root_add_16148_2/U45/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.82 f
+  doCore_core_inst/add_1_root_add_16148_2/U44/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.83 f
+  doCore_core_inst/add_1_root_add_16148_2/U43/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.86 f
+  doCore_core_inst/add_1_root_add_16148_2/U42/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.88 f
+  doCore_core_inst/add_1_root_add_16148_2/U41/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.91 f
+  doCore_core_inst/add_1_root_add_16148_2/U40/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.92 f
+  doCore_core_inst/add_1_root_add_16148_2/U39/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       3.95 f
+  doCore_core_inst/add_1_root_add_16148_2/U38/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       3.97 f
+  doCore_core_inst/add_1_root_add_16148_2/U37/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.00 f
+  doCore_core_inst/add_1_root_add_16148_2/U36/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.01 f
+  doCore_core_inst/add_1_root_add_16148_2/U35/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.04 f
+  doCore_core_inst/add_1_root_add_16148_2/U34/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.06 f
+  doCore_core_inst/add_1_root_add_16148_2/U33/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.09 f
+  doCore_core_inst/add_1_root_add_16148_2/U32/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.10 f
+  doCore_core_inst/add_1_root_add_16148_2/U31/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.13 f
+  doCore_core_inst/add_1_root_add_16148_2/U30/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.15 f
+  doCore_core_inst/add_1_root_add_16148_2/U29/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.17 f
+  doCore_core_inst/add_1_root_add_16148_2/U28/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.19 f
+  doCore_core_inst/add_1_root_add_16148_2/U27/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.22 f
+  doCore_core_inst/add_1_root_add_16148_2/U26/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.24 f
+  doCore_core_inst/add_1_root_add_16148_2/U25/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.26 f
+  doCore_core_inst/add_1_root_add_16148_2/U24/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.28 f
+  doCore_core_inst/add_1_root_add_16148_2/U23/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.31 f
+  doCore_core_inst/add_1_root_add_16148_2/U22/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.32 f
+  doCore_core_inst/add_1_root_add_16148_2/U21/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.35 f
+  doCore_core_inst/add_1_root_add_16148_2/U20/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.37 f
+  doCore_core_inst/add_1_root_add_16148_2/U19/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.40 f
+  doCore_core_inst/add_1_root_add_16148_2/U18/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.41 f
+  doCore_core_inst/add_1_root_add_16148_2/U17/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.44 f
+  doCore_core_inst/add_1_root_add_16148_2/U16/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.46 f
+  doCore_core_inst/add_1_root_add_16148_2/U15/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.49 f
+  doCore_core_inst/add_1_root_add_16148_2/U14/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.50 f
+  doCore_core_inst/add_1_root_add_16148_2/U13/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.53 f
+  doCore_core_inst/add_1_root_add_16148_2/U12/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.55 f
+  doCore_core_inst/add_1_root_add_16148_2/U11/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.58 f
+  doCore_core_inst/add_1_root_add_16148_2/U10/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.59 f
+  doCore_core_inst/add_1_root_add_16148_2/U9/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.62 f
+  doCore_core_inst/add_1_root_add_16148_2/U8/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.64 f
+  doCore_core_inst/add_1_root_add_16148_2/U7/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.66 f
+  doCore_core_inst/add_1_root_add_16148_2/U6/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.68 f
+  doCore_core_inst/add_1_root_add_16148_2/U5/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.71 f
+  doCore_core_inst/add_1_root_add_16148_2/U4/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       4.73 f
+  doCore_core_inst/add_1_root_add_16148_2/U3/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       4.75 f
+  doCore_core_inst/add_1_root_add_16148_2/U2/Z (C12T28SOI_LL_AND2X8_P0)
+                                                          0.02       4.77 f
+  doCore_core_inst/add_1_root_add_16148_2/U1/Z (C12T28SOI_LL_OAI22X5_P0)
+                                                          0.15       4.92 r
+  doCore_core_inst/add_1_root_add_16148_2/SUM(32) (doCore_core_DW01_add_8)
+                                                          0.00       4.92 r
+  doCore_core_inst/U5083/Z (C12T28SOI_LL_IVX8_P0)         0.01       4.94 f
+  doCore_core_inst/U2565/Z (C12T28SOI_LL_BFX8_P0)         0.03       4.97 f
+  doCore_core_inst/U5051/Z (C12T28SOI_LL_AO22X8_P0)       0.04       5.01 f
+  doCore_core_inst/add_1_root_add_16139_2/A(1) (doCore_core_DW01_add_6)
+                                                          0.00       5.01 f
+  doCore_core_inst/add_1_root_add_16139_2/U62/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.03 f
+  doCore_core_inst/add_1_root_add_16139_2/U61/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.06 f
+  doCore_core_inst/add_1_root_add_16139_2/U60/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.07 f
+  doCore_core_inst/add_1_root_add_16139_2/U59/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.10 f
+  doCore_core_inst/add_1_root_add_16139_2/U58/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.12 f
+  doCore_core_inst/add_1_root_add_16139_2/U57/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.15 f
+  doCore_core_inst/add_1_root_add_16139_2/U56/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.16 f
+  doCore_core_inst/add_1_root_add_16139_2/U55/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.19 f
+  doCore_core_inst/add_1_root_add_16139_2/U54/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.21 f
+  doCore_core_inst/add_1_root_add_16139_2/U53/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.24 f
+  doCore_core_inst/add_1_root_add_16139_2/U52/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.25 f
+  doCore_core_inst/add_1_root_add_16139_2/U51/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.28 f
+  doCore_core_inst/add_1_root_add_16139_2/U50/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.30 f
+  doCore_core_inst/add_1_root_add_16139_2/U49/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.32 f
+  doCore_core_inst/add_1_root_add_16139_2/U48/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.34 f
+  doCore_core_inst/add_1_root_add_16139_2/U47/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.37 f
+  doCore_core_inst/add_1_root_add_16139_2/U46/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.39 f
+  doCore_core_inst/add_1_root_add_16139_2/U45/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.41 f
+  doCore_core_inst/add_1_root_add_16139_2/U44/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.43 f
+  doCore_core_inst/add_1_root_add_16139_2/U43/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.46 f
+  doCore_core_inst/add_1_root_add_16139_2/U42/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.48 f
+  doCore_core_inst/add_1_root_add_16139_2/U41/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.50 f
+  doCore_core_inst/add_1_root_add_16139_2/U40/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.52 f
+  doCore_core_inst/add_1_root_add_16139_2/U39/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.55 f
+  doCore_core_inst/add_1_root_add_16139_2/U38/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.56 f
+  doCore_core_inst/add_1_root_add_16139_2/U37/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.59 f
+  doCore_core_inst/add_1_root_add_16139_2/U36/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.61 f
+  doCore_core_inst/add_1_root_add_16139_2/U35/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.64 f
+  doCore_core_inst/add_1_root_add_16139_2/U34/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.65 f
+  doCore_core_inst/add_1_root_add_16139_2/U33/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.68 f
+  doCore_core_inst/add_1_root_add_16139_2/U32/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.70 f
+  doCore_core_inst/add_1_root_add_16139_2/U31/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.73 f
+  doCore_core_inst/add_1_root_add_16139_2/U30/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.74 f
+  doCore_core_inst/add_1_root_add_16139_2/U29/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.77 f
+  doCore_core_inst/add_1_root_add_16139_2/U28/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.79 f
+  doCore_core_inst/add_1_root_add_16139_2/U27/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.81 f
+  doCore_core_inst/add_1_root_add_16139_2/U26/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.83 f
+  doCore_core_inst/add_1_root_add_16139_2/U25/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.86 f
+  doCore_core_inst/add_1_root_add_16139_2/U24/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.88 f
+  doCore_core_inst/add_1_root_add_16139_2/U23/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.90 f
+  doCore_core_inst/add_1_root_add_16139_2/U22/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.92 f
+  doCore_core_inst/add_1_root_add_16139_2/U21/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.95 f
+  doCore_core_inst/add_1_root_add_16139_2/U20/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       5.97 f
+  doCore_core_inst/add_1_root_add_16139_2/U19/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       5.99 f
+  doCore_core_inst/add_1_root_add_16139_2/U18/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       6.01 f
+  doCore_core_inst/add_1_root_add_16139_2/U17/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       6.04 f
+  doCore_core_inst/add_1_root_add_16139_2/U16/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       6.05 f
+  doCore_core_inst/add_1_root_add_16139_2/U15/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       6.08 f
+  doCore_core_inst/add_1_root_add_16139_2/U14/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       6.10 f
+  doCore_core_inst/add_1_root_add_16139_2/U13/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       6.13 f
+  doCore_core_inst/add_1_root_add_16139_2/U12/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       6.14 f
+  doCore_core_inst/add_1_root_add_16139_2/U11/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       6.17 f
+  doCore_core_inst/add_1_root_add_16139_2/U10/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       6.19 f
+  doCore_core_inst/add_1_root_add_16139_2/U9/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       6.22 f
+  doCore_core_inst/add_1_root_add_16139_2/U8/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       6.23 f
+  doCore_core_inst/add_1_root_add_16139_2/U7/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       6.26 f
+  doCore_core_inst/add_1_root_add_16139_2/U6/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       6.28 f
+  doCore_core_inst/add_1_root_add_16139_2/U5/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       6.30 f
+  doCore_core_inst/add_1_root_add_16139_2/U4/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       6.32 f
+  doCore_core_inst/add_1_root_add_16139_2/U3/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       6.35 f
+  doCore_core_inst/add_1_root_add_16139_2/U2/Z (C12T28SOI_LL_AND2X8_P0)
+                                                          0.02       6.37 f
+  doCore_core_inst/add_1_root_add_16139_2/U1/Z (C12T28SOI_LL_OAI22X5_P0)
+                                                          0.01       6.38 r
+  doCore_core_inst/add_1_root_add_16139_2/SUM(32) (doCore_core_DW01_add_6)
+                                                          0.00       6.38 r
+  doCore_core_inst/U5032/Z (C12T28SOI_LL_BFX8_P0)         0.03       6.41 r
+  doCore_core_inst/U21/Z (C12T28SOI_LL_OA12X8_P0)         0.03       6.44 r
+  doCore_core_inst/add_0_root_add_25733_ni/A(0) (doCore_core_DW01_inc_14)
+                                                          0.00       6.44 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_1/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.46 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_2/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.48 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_3/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.50 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_4/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.53 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_5/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.55 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_6/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.57 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_7/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.59 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_8/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.61 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_9/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.64 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_10/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.66 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_11/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.68 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_12/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.70 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_13/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.72 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_14/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.74 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_15/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.77 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_16/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.79 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_17/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.81 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_18/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.83 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_19/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.85 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_20/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.87 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_21/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.90 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_22/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.92 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_23/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.94 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_24/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.96 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_25/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       6.98 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_26/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       7.01 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_27/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       7.03 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_28/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       7.05 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_29/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       7.07 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1_1_30/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.02       7.09 r
+  doCore_core_inst/add_0_root_add_25733_ni/U1/Z (C12T28SOI_LLS_XOR2X6_P0)
+                                                          0.02       7.11 r
+  doCore_core_inst/add_0_root_add_25733_ni/SUM(31) (doCore_core_DW01_inc_14)
+                                                          0.00       7.11 r
+  doCore_core_inst/U11305/Z (C12T28SOI_LL_AO22X8_P0)      0.02       7.13 r
+  doCore_core_inst/doCycle_multResult_sva_17_1_regx31x/D (C12T28SOI_LL_DFPQNX8_P0)
+                                                          0.00       7.13 r
+  data arrival time                                                  7.13
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  doCore_core_inst/doCycle_multResult_sva_17_1_regx31x/CP (C12T28SOI_LL_DFPQNX8_P0)
+                                                          0.00      10.00 r
+  library setup time                                     -0.01       9.99
+  data required time                                                 9.99
+  --------------------------------------------------------------------------
+  data required time                                                 9.99
+  data arrival time                                                 -7.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.86
+
+
+1

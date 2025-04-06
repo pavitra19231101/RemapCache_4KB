@@ -1,0 +1,240 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cache_monitor
+Version: O-2018.06-SP5-3
+Date   : Fri Feb 17 17:01:59 2023
+****************************************
+
+Operating Conditions: tt28_1.00V_0.00V_0.00V_0.00V_25C   Library: C28SOI_SC_12_CORE_LL
+Wire Load Model Mode: enclosed
+
+  Startpoint: cache_monitor_core_inst/timer_sva_regx0x
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cache_monitor_core_inst/detection_flag_rsci_idat_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cache_monitor      wl_zero               C28SOI_SC_12_CORE_LL
+  cache_monitor_core wl_zero               C28SOI_SC_12_CORE_LL
+  cache_monitor_core_DW01_add_1
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  cache_monitor_core_DW01_add_0
+                     wl_zero               C28SOI_SC_12_CORE_LL
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  cache_monitor_core_inst/timer_sva_regx0x/CP (C12T28SOI_LL_DFPQNX8_P0)
+                                                          0.00       0.00 r
+  cache_monitor_core_inst/timer_sva_regx0x/QN (C12T28SOI_LL_DFPQNX8_P0)
+                                                          0.03       0.03 r
+  cache_monitor_core_inst/U99/Z (C12T28SOI_LL_IVX8_P0)
+                                                          0.01       0.03 f
+  cache_monitor_core_inst/add_199/A(0) (cache_monitor_core_DW01_inc_0)
+                                                          0.00       0.03 f
+  cache_monitor_core_inst/add_199/U2/Z (C12T28SOI_LL_IVX4_P0)
+                                                          0.01       0.04 r
+  cache_monitor_core_inst/add_199/SUM(0) (cache_monitor_core_DW01_inc_0)
+                                                          0.00       0.04 r
+  cache_monitor_core_inst/U204/Z (C12T28SOI_LL_IVX4_P0)
+                                                          0.01       0.05 f
+  cache_monitor_core_inst/add_1_root_add_201_2/B(0) (cache_monitor_core_DW01_add_1)
+                                                          0.00       0.05 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U63/Z (C12T28SOI_LL_OR2X8_P0)
+                                                          0.02       0.07 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U62/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.09 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U61/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.12 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U60/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.13 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U59/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.16 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U58/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.18 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U57/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.21 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U56/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.22 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U55/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.25 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U54/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.27 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U53/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.30 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U52/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.31 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U51/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.34 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U50/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.36 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U49/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.39 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U48/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.40 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U47/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.43 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U46/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.45 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U45/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.47 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U44/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.49 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U43/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.52 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U42/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.54 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U41/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.56 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U40/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.58 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U39/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.61 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U38/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.62 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U37/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.65 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U36/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.67 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U35/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.70 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U34/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.71 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U33/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.74 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U32/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.76 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U31/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.79 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U30/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.80 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U29/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.83 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U28/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.85 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U27/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.87 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U26/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.89 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U25/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.92 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U24/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.94 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U23/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.96 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U22/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.98 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U21/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.01 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U20/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.02 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U19/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.05 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U18/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.07 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U17/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.10 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U16/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.11 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U15/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.14 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U14/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.16 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U13/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.19 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U12/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.20 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U11/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.23 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U10/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.25 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U9/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.28 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U8/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.29 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U7/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.32 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U6/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.34 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U5/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.36 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U4/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.38 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U3/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.41 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U2/Z (C12T28SOI_LL_AND2X8_P0)
+                                                          0.02       1.43 f
+  cache_monitor_core_inst/add_1_root_add_201_2/U1/Z (C12T28SOI_LL_OAI22X5_P0)
+                                                          0.02       1.45 r
+  cache_monitor_core_inst/add_1_root_add_201_2/SUM(32) (cache_monitor_core_DW01_add_1)
+                                                          0.00       1.45 r
+  cache_monitor_core_inst/U7/Z (C12T28SOI_LL_NOR2X7_P0)
+                                                          0.02       1.47 f
+  cache_monitor_core_inst/U34/Z (C12T28SOI_LL_AOI22X4_P0)
+                                                          0.03       1.49 r
+  cache_monitor_core_inst/U98/Z (C12T28SOI_LL_IVX8_P0)
+                                                          0.01       1.50 f
+  cache_monitor_core_inst/add_1_root_add_232_2/A(0) (cache_monitor_core_DW01_add_0)
+                                                          0.00       1.50 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U15/Z (C12T28SOI_LL_OR2X8_P0)
+                                                          0.02       1.53 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U14/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.54 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U13/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.57 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U12/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.59 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U11/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.61 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U10/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.63 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U9/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.66 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U8/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.68 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U7/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.70 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U6/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.72 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U5/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.75 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U4/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       1.76 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U3/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       1.79 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U2/Z (C12T28SOI_LL_AND2X8_P0)
+                                                          0.02       1.81 f
+  cache_monitor_core_inst/add_1_root_add_232_2/U1/Z (C12T28SOI_LL_OAI22X5_P0)
+                                                          0.01       1.82 r
+  cache_monitor_core_inst/add_1_root_add_232_2/SUM(8) (cache_monitor_core_DW01_add_0)
+                                                          0.00       1.82 r
+  cache_monitor_core_inst/U120/Z (C12T28SOI_LL_IVX8_P0)
+                                                          0.01       1.83 f
+  cache_monitor_core_inst/U119/Z (C12T28SOI_LL_AO22X8_P0)
+                                                          0.03       1.85 f
+  cache_monitor_core_inst/detection_flag_rsci_idat_reg/D (C12T28SOI_LL_DFPQNX8_P0)
+                                                          0.00       1.85 f
+  data arrival time                                                  1.85
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  cache_monitor_core_inst/detection_flag_rsci_idat_reg/CP (C12T28SOI_LL_DFPQNX8_P0)
+                                                          0.00      10.00 r
+  library setup time                                     -0.01       9.99
+  data required time                                                 9.99
+  --------------------------------------------------------------------------
+  data required time                                                 9.99
+  data arrival time                                                 -1.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.13
+
+
+1

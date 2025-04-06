@@ -1,0 +1,77 @@
+Loading db file '/opt/DesignKit/cmos28fdsoi_29/C28SOI_SC_12_CORE_LL/5.1-05/libs/C28SOI_SC_12_CORE_LL_tt28_1.00V_0.00V_0.00V_0.00V_25C.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : cache_monitor
+Version: O-2018.06-SP5-3
+Date   : Mon Mar 13 18:42:05 2023
+****************************************
+
+
+Library(s) Used:
+
+    C28SOI_SC_12_CORE_LL (File: /opt/DesignKit/cmos28fdsoi_29/C28SOI_SC_12_CORE_LL/5.1-05/libs/C28SOI_SC_12_CORE_LL_tt28_1.00V_0.00V_0.00V_0.00V_25C.db)
+
+
+Operating Conditions: tt28_1.00V_0.00V_0.00V_0.00V_25C   Library: C28SOI_SC_12_CORE_LL
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+cache_monitor          wl_zero           C28SOI_SC_12_CORE_LL
+cache_monitor_core     wl_zero           C28SOI_SC_12_CORE_LL
+ccs_out_v1_rscid6_width1
+                       wl_zero           C28SOI_SC_12_CORE_LL
+mgc_io_sync_v2_valid0  wl_zero           C28SOI_SC_12_CORE_LL
+cache_monitor_core_core_fsm
+                       wl_zero           C28SOI_SC_12_CORE_LL
+cache_monitor_core_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+cache_monitor_core_DW01_add_1
+                       wl_zero           C28SOI_SC_12_CORE_LL
+cache_monitor_core_DW01_add_2
+                       wl_zero           C28SOI_SC_12_CORE_LL
+cache_monitor_core_DW01_add_3
+                       wl_zero           C28SOI_SC_12_CORE_LL
+cache_monitor_core_DW01_inc_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+cache_monitor_core_DW01_add_4
+                       wl_zero           C28SOI_SC_12_CORE_LL
+cache_monitor_core_DW01_inc_1
+                       wl_zero           C28SOI_SC_12_CORE_LL
+
+
+Global Operating Voltage = 1    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  =  32.9110 uW   (90%)
+  Net Switching Power  =   3.6608 uW   (10%)
+                         ---------
+Total Dynamic Power    =  36.5719 uW  (100%)
+
+Cell Leakage Power     =  14.8679 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       2.7087e-02        9.3825e-05        1.8048e-03        2.8986e-02  (  56.35%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  5.8239e-03        3.5670e-03        1.3063e-02        2.2454e-02  (  43.65%)
+--------------------------------------------------------------------------------------------------
+Total          3.2911e-02 mW     3.6608e-03 mW     1.4868e-02 mW     5.1440e-02 mW
+1

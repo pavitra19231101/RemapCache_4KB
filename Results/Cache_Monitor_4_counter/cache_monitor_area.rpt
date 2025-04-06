@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : cache_monitor
+Version: O-2018.06-SP5-3
+Date   : Mon Mar 13 18:42:03 2023
+****************************************
+
+Library(s) Used:
+
+    C28SOI_SC_12_CORE_LL (File: /opt/DesignKit/cmos28fdsoi_29/C28SOI_SC_12_CORE_LL/5.1-05/libs/C28SOI_SC_12_CORE_LL_tt28_1.00V_0.00V_0.00V_0.00V_25C.db)
+
+Number of ports:                          766
+Number of nets:                          1445
+Number of cells:                          741
+Number of combinational cells:            657
+Number of sequential cells:                67
+Number of macros/black boxes:               0
+Number of buf/inv:                        192
+Number of references:                       1
+
+Combinational area:                536.438403
+Buf/Inv area:                       64.953602
+Noncombinational area:             153.081604
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   689.520006
+Total area:                 undefined
+1
